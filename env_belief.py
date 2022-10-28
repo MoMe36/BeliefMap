@@ -323,31 +323,35 @@ def ray_test():
 
 if __name__ == "__main__": 
 
-    # ray_train()
-    ray_test()
 
+    # =======================================
+    # TEST RANDOM AGENT 
     # ArcadeRender(BeliefEnv())
     # arcade.run()
     # test_agent()
 
 
-    # AgentRender()
-    # arcade.run()
-
-
+    # =======================================
+    #  TRAIN SB AGENT
     # envs = SubprocVecEnv([BeliefEnv for i in range(8)])
     # m = PPO('MultiInputPolicy', VecMonitor(venv = envs), verbose = 1, device = 'cpu')
     # m.learn(total_timesteps = 1000000)
     # m.save('test_ppo')
 
 
-
-
+    # =======================================
+    # TEST SB AGENT
+    
     # m = PPO.load('./test_ppo')
     # test_agent(m)
     # AgentRender(m)
     # arcade.run()
 
+
+    # =======================================
+    # TRAIN / TEST RAY AGENT 
+    # ray_train()
+    # ray_test()
 
 
 
